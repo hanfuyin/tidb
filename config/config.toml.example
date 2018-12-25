@@ -62,7 +62,7 @@ disable-timestamp = false
 slow-query-file = ""
 
 # Queries with execution time greater than this value will be logged. (Milliseconds)
-slow-threshold = 300
+slow-threshold = 0
 
 # Queries with internal result greater than this value will be logged.
 expensive-threshold = 10000

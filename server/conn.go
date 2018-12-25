@@ -967,6 +967,7 @@ func (cc *clientConn) writeResultset(ctx context.Context, rs ResultSet, binary b
 			terror.Call(rs.Close)
 		}
 		r := recover()
+
 		if r == nil {
 			return
 		}
@@ -989,6 +990,7 @@ func (cc *clientConn) writeResultset(ctx context.Context, rs ResultSet, binary b
 	if err != nil {
 		return errors.Trace(err)
 	}
+
 	return errors.Trace(cc.flush())
 }
 
